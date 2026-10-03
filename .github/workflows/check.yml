@@ -1,0 +1,25 @@
+name: check
+on: [pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: No placeholders remain
+        run: '! grep -nE "\[(DECISION|TODO|TBD)" practice-player-privacy-policy.md'
+      - name: PDF regenerated whenever the Markdown changes
+        run: |
+          changed=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")
+          if echo "$changed" | grep -qx 'practice-player-privacy-policy.md' && ! echo "$changed" | grep -qx 'practice-player-privacy-policy.pdf'; then
+            echo "Markdown changed but practice-player-privacy-policy.pdf was not regenerated"; exit 1
+          fi
+      - name: Dates present
+        run: grep -q 'Effective ' practice-player-privacy-policy.md && grep -q 'Last updated ' practice-player-privacy-policy.md
+      - name: Links resolve
+        run: |
+          for u in $(grep -oE 'https?://[^) ]+' practice-player-privacy-policy.md | sort -u); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 20 -A 'Mozilla/5.0' "$u"); echo "$code $u"
+            [ "$code" -lt 400 ] || exit 1
+          done
