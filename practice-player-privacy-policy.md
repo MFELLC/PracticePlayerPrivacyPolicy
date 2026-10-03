@@ -85,7 +85,7 @@ If you are in the EU or UK, you can also see, correct, or delete your data, limi
 
 ## 8. Other things you should know
 
-- **Children**: The App is for general audiences and not directed at children under 13. If you believe a child has sent us personal information, email us and we will delete their feedback and search for their analytics.
+- **Children**: The App is for everyone and has no age limit. It is made for musicians of all ages, not specifically for children under 13. If you believe a child under 13 has sent us personal information, email us and we will delete their feedback and search for their analytics.
 - **Where data is processed**: We are in the United States. Google, Cloudflare, and GitHub are US companies whose servers can be anywhere; TelemetryDeck processes analytics in the EU. Your data may be processed in a country with different privacy laws from yours.
 - **Security**: The App's connections are encrypted (HTTPS). If a breach affects your data, we will tell the authorities where the law requires and tell you by email if we have your address, or on practiceplayer.app if not.
 - **Our website**: [practiceplayer.app](https://practiceplayer.app) is hosted by Cloudflare, which sets a short-lived security cookie, and loads fonts from Google Fonts. It has no analytics or tracking.
