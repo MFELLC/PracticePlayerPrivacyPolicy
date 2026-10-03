@@ -1,6 +1,6 @@
 # Practice Player Privacy Policy
 
-**Meatloaf For Everyone LLC** · Effective October 2, 2026 · Last updated October 2, 2026
+**Meatloaf For Everyone LLC** · Effective October 3, 2026 · Last updated October 3, 2026
 
 This policy explains what Practice Player (the "App") does with your information. The App is made by Meatloaf For Everyone LLC ("we", "us"), a one-person company in Colorado, USA, that decides how this data is used. Contact: general@meatloafforeveryone.com.
 
@@ -73,7 +73,7 @@ Synced audio counts toward your iCloud storage. Turning sync off stops syncing a
 |---|---|---|---|---|
 | Apple | Catalog requests (search terms; song details for artwork; requests for your recent plays and recommendations for "For You"), iCloud sync data and audio if you turn it on, the export-credit counter in iCloud (section 1), purchases, theme downloads | The Apple services the App is built on | Needed to provide features you use or turn on | iCloud: until you delete it (section 5); everything else: as described in Apple's privacy policy |
 | From Apple, to us | Crash reports and usage statistics, if Share With App Developers is on | Fix crashes and performance problems | Our legitimate interest in fixing the App; you control sharing in iOS Settings (section 7) | As shown to us by Apple |
-| TelemetryDeck GmbH (Germany) | Pseudonymous usage signals (section 3) | Find bugs, see which features are used | Our legitimate interest; you can object (section 7) | Kept for our charts for **[DECISION: TelemetryDeck plan retention]**, then moved to TelemetryDeck's archive, which has no fixed deletion date unless we ask for deletion |
+| TelemetryDeck GmbH (Germany) | Pseudonymous usage signals (section 3) | Find bugs, see which features are used | Our legitimate interest; you can object (section 7) | Shown in our charts for the period our TelemetryDeck plan includes (currently 3 months), then moved to TelemetryDeck's archive, which TelemetryDeck expects to delete after 7 to 10 years; we can ask for deletion sooner |
 | Google LLC | Feedback stored in Google Sheets and our email (section 4); the address you gave for news & updates; your IP address and browser details when our website loads its fonts from Google Fonts | Store feedback so we can answer it; serve the website | Feedback: our legitimate interest in answering you and fixing what you report. News emails: your consent. Website: our legitimate interest | Feedback: until we have answered you and fixed the issue, sooner on request; news address: until you say stop; fonts: as described in Google's privacy policy |
 | Our email providers (GoDaddy for meatloafforeveryone.com; Namecheap forwarding for practiceplayer.app) | Emails you send us, including feedback sent by email | Deliver and store our email | Our legitimate interest in answering you | Until we have answered you and fixed the issue, sooner on request |
 | Cloudflare, Inc. (USA) | Website visits: your IP address, browser details, and the `__cf_bm` bot-protection cookie | Hosts and protects practiceplayer.app | Our legitimate interest in a working, secure site | Cookie: 30 minutes of inactivity; visit logs: as described in Cloudflare's privacy policy |
@@ -83,7 +83,7 @@ Synced audio counts toward your iCloud storage. Turning sync off stops syncing a
 
 Data on your device is kept until you delete it or delete the App, with the exceptions in section 1.
 
-We do not sell your personal information or share it for advertising. **[DECISION: data processing agreements]** TelemetryDeck and Google process this data for us under their data processing terms and protect it at least as well as this policy describes.
+We do not sell your personal information or share it for advertising. TelemetryDeck processes analytics for us under a data processing agreement that is part of its terms of service. Feedback is stored in our Google account under Google's terms of service and privacy policy.
 
 The only data sent to us automatically is the usage analytics in section 3. Feedback and your email address are optional. We make no automated decisions that have legal or similarly significant effects on you. Reminder times and "For You" suggestions are worked out on your device and are not sent to us.
 
