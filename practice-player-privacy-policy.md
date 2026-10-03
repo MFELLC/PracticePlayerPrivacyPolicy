@@ -83,7 +83,7 @@ Synced audio counts toward your iCloud storage. Turning sync off stops syncing a
 
 Data on your device is kept until you delete it or delete the App, with the exceptions in section 1.
 
-We do not sell your personal information or share it for advertising. TelemetryDeck processes analytics for us under a data processing agreement that is part of its terms of service. Feedback is stored in our Google account under Google's terms of service and privacy policy.
+We do not sell your personal information or share it for advertising. TelemetryDeck and Google process this data for us under data processing agreements and protect it at least as well as this policy describes.
 
 The only data sent to us automatically is the usage analytics in section 3. Feedback and your email address are optional. We make no automated decisions that have legal or similarly significant effects on you. Reminder times and "For You" suggestions are worked out on your device and are not sent to us.
 
