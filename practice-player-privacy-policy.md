@@ -7,8 +7,8 @@ This policy explains what Practice Player (the "App") does with your information
 ## The short version
 
 - Your songs, recordings, loops, notes, playlists, and practice stats are stored on your device. The App copies them elsewhere only if you turn on iCloud sync (off by default), export a backup, or send us feedback. Song, playlist, or file names can also appear in error reports (section 3), and like any app's data they are included in your device's own iCloud or computer backup if you have one turned on.
-- We never see your Apple ID, and we never get the audio of your recordings unless you attach a file to an email yourself. Song titles, playlist names, and file names reach us only inside feedback you send and inside error reports (sections 3 and 4).
-- Data comes to us in three ways: pseudonymous usage analytics, which cannot yet be turned off in the App; feedback and emails you choose to send; and crash reports and usage statistics Apple passes on to developers if you turned on Share With App Developers (iOS Settings → Privacy & Security → Analytics & Improvements, where you can turn it off). Apple services the App is built on (Apple Music, iCloud, the App Store) receive what they need to work.
+- The App does not send us your Apple ID or the audio of your recordings. Song titles, playlist names, and file names reach us only in feedback you send and in error reports (sections 3 and 4).
+- Data comes to us in three ways: pseudonymous usage analytics, which cannot yet be turned off in the App; feedback and emails you choose to send; and the crash reports and usage statistics Apple shares with developers when Share With App Developers is on (iOS Settings → Privacy & Security → Analytics & Improvements). Apple services the App is built on (Apple Music, iCloud, the App Store) receive what they need to work.
 - Deleting the App does not delete what is already in your iCloud, songs it added to your Apple Music library, backups you exported, feedback you sent us, analytics already sent, or a small export-credit counter the App keeps in your keychain and iCloud.
 - We do not sell your personal information; only the services listed in section 6 receive it, to run the App for us. We never use it for advertising, and we do not track you across other companies' apps or websites.
 
@@ -16,13 +16,13 @@ This policy explains what Practice Player (the "App") does with your information
 
 Songs (references to your Apple Music library and copies of audio files you import), recordings, practice data (loop points and notes, playlists, per-song settings, practice time, streaks, goals, reminder schedules), settings and purchase status, and a diagnostic log (errors only in App Store builds) plus a crash log if the App crashes, and the email address you typed into the feedback form, so it is filled in next time.
 
-Deleting the App removes its data from this device, except a small export-credit counter the App keeps in your device keychain and iCloud key-value storage so purchased credits survive a reinstall, and, if you used older versions, a keychain note of the App version you first installed. It also does not remove data already in your iCloud (section 5), backups you exported (they go wherever you saved them; we never receive them), or feedback you sent (section 4). When your device is connected to a computer, the App's files (imported audio, recordings, logs, and a copy of each backup you export) can be seen and copied in Finder or the Apple Devices app. A backup holds your library details (titles, loops, notes, playlists, settings) but no audio; treat it like any personal file.
+Deleting the App removes its data from this device, except a small export-credit counter the App keeps in your device keychain and iCloud key-value storage so purchased credits survive a reinstall, and, if you used older versions, a keychain note of the App version you first installed. It also does not remove data already in your iCloud (section 5), backups you exported, or feedback you sent (section 4). When your device is connected to a computer, the App's files (imported audio, recordings, logs, and a copy of each backup you export) can be seen and copied in Finder or the Apple Devices app. A backup holds your library details (titles, loops, notes, playlists, settings) but no audio.
 
 ## 2. Permissions the App asks for
 
 - **Media & Apple Music**: to find and play songs in your library, add catalog songs you pick to it, and suggest songs in "For You" from your recent plays. Apple handles these requests (section 5). Song names can appear in error reports and feedback (sections 3 and 4); nothing else from your library comes to us.
 - **Microphone**: the App asks the first time you record and uses the microphone only while you are recording. Recordings are saved on your device.
-- **Notifications**: only for practice reminders, which are scheduled on the device. If iCloud sync is on, Apple sends the App silent pushes when new data arrives; we never receive a push token.
+- **Notifications**: only for practice reminders, which are scheduled on the device. If iCloud sync is on, Apple sends the App silent pushes when new data arrives. We do not send push notifications.
 
 You can change any of these in iOS Settings at any time.
 
@@ -36,11 +36,11 @@ Release builds of the App (App Store and TestFlight) send usage signals to [Tele
 
 This data is pseudonymous: it is not tied to your name, email, or Apple ID, but it does identify one install over time. Analytics does not include your name, email, Apple ID, notes, or recordings. Error reports, however, can include the name of the song, playlist, or file involved in the error, including a playlist name you typed. Purchases are recorded the same way: when you start, complete, restore, or fail a purchase, and when Apple refunds or revokes one, with the product and its price.
 
-Analytics cannot currently be turned off inside the App, so for now the only way to stop new signals is to stop using the App. You can still object by emailing us; we will look for your past signals as described in section 7 and ask TelemetryDeck to delete them. We rely on our legitimate interest in fixing bugs and improving the App. We never use analytics to track you across other companies' apps or websites.
+Analytics cannot currently be turned off inside the App. You can object by emailing us; we will search for your past signals as described in section 7 and ask TelemetryDeck to delete them. We rely on our legitimate interest in fixing bugs and improving the App. We never use analytics to track you across other companies' apps or websites.
 
 ## 4. Feedback you send us
 
-The App has a feedback form. When you tap Submit, the following is sent right away; the log and song details cannot be left out:
+The App has a feedback form. When you tap Submit, the App sends all of the following together:
 
 - What you typed, your email address if you chose to give one, and whether you switched on "OK to send me news & updates".
 - App version, iOS version, and device model.
@@ -48,7 +48,7 @@ The App has a feedback form. When you tap Submit, the following is sent right aw
 - A sync and storage summary: whether iCloud sync is on and your iCloud account status, your App Store country, how many songs, playlists, and practice records you have, sync upload and download counts and the last sync error, whether Low Power Mode is on, the size of the App's database and log, and free storage space.
 - The App's diagnostic log and any crash log. The log can include song titles, playlist names, file names and locations, and Apple Music song identifiers.
 
-Feedback is posted to a Google web form handler and stored in a Google Sheet in our Google account, so Google LLC processes it for us. If the form cannot reach Google, and always in places where Google is blocked such as China, the App opens your email app instead, addressed to general@practiceplayer.app, with your message and App and device details filled in. The open song and your "news & updates" choice are not included, so mention them in the email if you want to. In Apple Mail the App's diagnostic and crash logs are attached; in Gmail or other mail apps nothing is attached. Nothing is sent until you send that email, which then travels through your email provider to our mailbox.
+Feedback is posted to a Google web form handler and stored in a Google Sheet in our Google account, so Google LLC processes it for us. Where the form cannot reach Google, including regions where Google services are blocked, the App opens your email app instead with a message to general@practiceplayer.app containing your message and App and device details; Apple Mail also attaches the diagnostic and crash logs. Nothing is sent until you send that email.
 
 We use feedback to answer you and fix the App. If you also switched on "OK to send me news & updates" (off unless you turn it on) and gave an email address, we keep that address to occasionally email you about the App, even after the feedback itself is deleted, until you reply "stop" or ask us to delete it. Please do not put sensitive information in feedback.
 
@@ -56,9 +56,9 @@ We keep feedback only as long as we need it to answer you and fix the issue. Ema
 
 ## 5. Apple services
 
-Apple Music searches and lookups, App Store purchases, and theme downloads are handled by Apple under [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). Adding a catalog song can also add it to your Apple Music library. We never receive your card, billing address, or Apple ID, and the App checks your purchases on the device without sending a receipt to anyone but Apple. Apart from the error reports and feedback described in sections 3 and 4, nothing from your library goes to anyone but Apple.
+Apple Music searches and lookups, App Store purchases, and theme downloads are handled by Apple under [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). Adding a catalog song can also add it to your Apple Music library. Apple processes payments; we do not receive your card, billing address, or Apple ID, and the App checks purchases on the device. Library information reaches us only through the error reports and feedback described in sections 3 and 4.
 
-**iCloud sync (optional, off by default).** If you turn on iCloud sync in the App's menu, your practice data (song references, loop points, notes, playlists, per-song settings, practice stats, goals, reminder schedules) is stored in your private iCloud database using CloudKit, Apple's iCloud database service, and synced between your devices on the same Apple ID, and imported audio files and recordings move into the App's iCloud Drive folder so your other devices can download them. We, the developer, have no access to either. Synced audio counts toward your iCloud storage. Turning sync off stops syncing once you restart the App; everything already in iCloud stays there, including your audio files and recordings, which keep playing from iCloud and are not copied back to the device. Deleting them (synced data from iOS Settings under iCloud storage, audio files from the Files app) removes them from all your devices, so export or copy anything you want to keep first; email us if you need help.
+**iCloud sync (optional, off by default).** If you turn on iCloud sync in the App's menu, your practice data (song references, loop points, notes, playlists, per-song settings, practice stats, goals, reminder schedules) is stored in your private iCloud database using CloudKit, Apple's iCloud database service, and synced between your devices on the same Apple ID, and imported audio files and recordings move into the App's iCloud Drive folder so your other devices can download them. We, the developer, have no access to either. Synced audio counts toward your iCloud storage. Turning sync off stops syncing after you restart the App; everything already in iCloud, including audio files and recordings, stays there and continues to play from iCloud. Deleting it in iOS Settings (synced data) or the Files app (audio) removes it from all your devices, so export anything you want to keep first.
 
 ## 6. Who receives data, why, and for how long
 
@@ -76,11 +76,11 @@ On your device: until you delete it or the App.
 
 We do not sell your personal information or share it for advertising. **[DECISION: data processing agreements]** TelemetryDeck and Google process this data for us under their data processing terms and protect it at least as well as this policy describes.
 
-Apart from the usage analytics in section 3, which the App sends automatically, you do not have to give us any information to use the App. Feedback and your email address are optional. We make no automated decisions about you and do not profile you.
+Using the App requires no information from you beyond the automatic usage analytics in section 3. Feedback and your email address are optional. We make no automated decisions about you and do not profile you.
 
 ## 7. Your rights and choices
 
-- **See or delete your data**: almost everything is on your device, so you already have it, and deleting the App removes it from the device (section 1). For iCloud, see section 5. For feedback, email us. Analytics is not linked to your name or email, and the install identifier is never shown to you, so we usually cannot tell which signals are yours. If you want us to look, email us with anything that might help, such as roughly when an error happened, your device model, or a playlist name that could appear in an error report; we will search for matching signals and ask TelemetryDeck to delete any we find.
+- **See or delete your data**: almost everything is on your device, so you already have it, and deleting the App removes it from the device (section 1). For iCloud, see section 5. For feedback, email us. Analytics is not linked to your name or email, so we can usually not tell which signals are yours. If you email us details such as when an error happened, your device model, or a playlist name, we will search for matching signals and ask TelemetryDeck to delete any we find.
 - **Object to analytics: email us. There is no switch in the App yet.**
 - **Delete your feedback**: email us and we will delete it.
 - **Stop news emails**: reply "stop" to any of them, or email us.
@@ -94,8 +94,8 @@ If you are in the European Union or the United Kingdom, you also have the right 
 
 - **Children**: The App is for general audiences and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has sent us personal information through feedback, email us and we will delete it.
 - **Where data is processed**: We are in the United States. Feedback is stored by Google LLC, our website is served by Cloudflare, Inc., and this policy by GitHub, Inc., all US companies whose servers can be in the United States or other countries; analytics is processed by TelemetryDeck GmbH in the European Union; Apple handles its parts under its own policy. Your data can therefore be processed in a country with different privacy laws from yours.
-- **Security**: The App's own connections to TelemetryDeck, Google, and Apple use encrypted HTTPS. Feedback you send by email, and backups you export, are only as protected as your email provider or wherever you save them. If a breach affects your data, we will tell you and the authorities where the law requires.
-- **Our website**: [practiceplayer.app](https://practiceplayer.app) is a static site on Cloudflare Pages with no analytics scripts and no cookies of our own; Cloudflare and Google Fonts receive your IP address, and Cloudflare sets a short-lived bot-protection cookie.
+- **Security**: The App's connections to TelemetryDeck, Google, and Apple are encrypted (HTTPS). Email and exported backups are protected by your email provider or the place you save them. If a breach affects your data, we will notify you and the authorities where the law requires.
+- **Our website**: [practiceplayer.app](https://practiceplayer.app) is hosted by Cloudflare, which processes your IP address to serve and protect the site and sets a short-lived security cookie. The site loads fonts from Google Fonts and has no analytics or tracking.
 - **Do Not Track**: The App and website do not track you across other companies' apps or websites and do not let others do so, so there are no Do Not Track signals for us to respond to.
 
 ## 9. Changes to this policy
